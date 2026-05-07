@@ -1,0 +1,246 @@
+/* ── 젤리 영단어 GitHub Pages 공통 스타일 ── */
+:root {
+  --primary: #FFD600;
+  --primary-dark: #F5C000;
+  --accent: #FF6B6B;
+  --text: #1a1a2e;
+  --text-sub: #555;
+  --bg: #FFFDF0;
+  --card: #fff;
+  --border: #f0e8c0;
+  --radius: 16px;
+  --max-w: 760px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* ── 헤더 ── */
+header {
+  background: var(--primary);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header .logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+header nav a:hover { opacity: 1; }
+
+/* ── 메인 ── */
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* ── 히어로 (index 전용) ── */
+.hero {
+  text-align: center;
+  padding: 60px 0 48px;
+}
+
+.hero-emoji { font-size: 4rem; margin-bottom: 16px; }
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--text-sub);
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--text);
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 2px solid var(--text);
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 3px 3px 0 var(--text);
+}
+
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--text);
+}
+
+/* ── 피처 그리드 ── */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.feature-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.feature-card .icon { font-size: 2rem; margin-bottom: 10px; }
+.feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+.feature-card p  { font-size: 0.82rem; color: var(--text-sub); }
+
+/* ── 문서 페이지 (privacy, manual) ── */
+.page-header {
+  padding: 36px 0 24px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.page-header .breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-sub);
+  margin-bottom: 8px;
+}
+
+.page-header .breadcrumb a {
+  color: var(--text-sub);
+  text-decoration: none;
+}
+
+.page-header h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.page-header .updated {
+  font-size: 0.8rem;
+  color: var(--text-sub);
+  margin-top: 6px;
+}
+
+/* ── 섹션 ── */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.section h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: var(--text-sub);
+}
+
+.section p, .section li {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
+
+.section ul, .section ol {
+  padding-left: 20px;
+}
+
+.section li { margin-bottom: 4px; }
+
+/* ── 정보 박스 ── */
+.info-box {
+  background: #FFF8DC;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  margin: 16px 0;
+}
+
+/* ── 수동 카드 ── */
+.manual-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.manual-card .num {
+  background: var(--primary);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  border: 2px solid var(--text);
+}
+
+.manual-card .body h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
+.manual-card .body p  { font-size: 0.85rem; color: var(--text-sub); }
+
+/* ── 푸터 ── */
+footer {
+  background: var(--text);
+  color: #aaa;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.8rem;
+}
+
+footer a { color: var(--primary); text-decoration: none; }
+
+/* ── 반응형 ── */
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.6rem; }
+  header nav { gap: 12px; }
+}
