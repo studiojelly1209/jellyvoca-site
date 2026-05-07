@@ -48,6 +48,8 @@ header .logo-img {
 header nav {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 header nav a {
@@ -229,6 +231,47 @@ main {
 .manual-card .body h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
 .manual-card .body p  { font-size: 0.85rem; color: var(--text-sub); }
 
+/* ── 비교표 ── */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.compare-table th {
+  background: #fff8dc;
+  font-size: 0.9rem;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+  text-align: left;
+}
+
+.compare-table td {
+  padding: 11px 10px;
+  border-bottom: 1px solid #f3edd2;
+  font-size: 0.88rem;
+}
+
+.compare-table td:not(:first-child) {
+  text-align: center;
+}
+
+.compare-table .col-pro,
+.compare-table .pro-val {
+  color: #7c3aed;
+}
+
+.compare-table .free-val {
+  color: #6b7280;
+}
+
 /* ── 푸터 ── */
 footer {
   background: var(--text);
@@ -244,4 +287,9 @@ footer a { color: var(--primary); text-decoration: none; }
 @media (max-width: 480px) {
   .hero h1 { font-size: 1.6rem; }
   header nav { gap: 12px; }
+  .compare-table th,
+  .compare-table td {
+    font-size: 0.8rem;
+    padding: 10px 8px;
+  }
 }
