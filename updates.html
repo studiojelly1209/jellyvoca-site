@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>업데이트 노트 — 젤리 영단어</title>
+  <meta name="description" content="젤리 영단어 앱 업데이트 내역을 확인하세요." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .update-entry { background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
+    .update-version { display: inline-block; background: var(--primary); color: var(--text); font-weight: 800; font-size: 0.85rem; padding: 4px 12px; border-radius: 50px; border: 1.5px solid var(--text); margin-bottom: 8px; }
+    .update-date { font-size: 0.78rem; color: var(--text-sub); margin-bottom: 14px; }
+    .update-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-right: 4px; margin-bottom: 10px; }
+    .tag-new { background: #dcfce7; color: #166534; }
+    .tag-fix { background: #fef9c3; color: #854d0e; }
+    .tag-improve { background: #dbeafe; color: #1e3a8a; }
+    .update-list { list-style: none; padding: 0; }
+    .update-list li { font-size: 0.88rem; color: var(--text-sub); padding: 5px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; }
+    .update-list li:last-child { border-bottom: none; }
+    .update-list li::before { content: "•"; color: var(--primary); font-weight: 900; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">🍬 젤리 영단어</a>
+  <nav>
+    <a href="updates.html">업데이트</a>
+    <a href="tips.html">학습 팁</a>
+    <a href="manual.html">사용 방법</a>
+    <a href="privacy.html">개인정보처리방침</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">홈</a> &rsaquo; 업데이트 노트</div>
+    <h1>업데이트 노트</h1>
+    <div class="updated">최신 버전부터 표시됩니다</div>
+  </div>
+
+  <!-- v1.0.0 -->
+  <div class="update-entry">
+    <div class="update-version">v1.0.0</div>
+    <div class="update-date">2025년 5월 출시</div>
+    <span class="update-tag tag-new">NEW</span>
+    <ul class="update-list">
+      <li>젤리 영단어 정식 출시 🎉</li>
+      <li>일반 · 수능 · 토익 · 학술 단어장 제공</li>
+      <li>매일 5단어 학습 + 복습 모드</li>
+      <li>주간 랭킹 시스템 (학습량 · 정답률)</li>
+      <li>코인 보상 및 프로필 꾸미기</li>
+      <li>선물함 — 코인·배지 수령 기능</li>
+      <li>글로벌 챌린지 — 고난도 학술 단어 20문제 주간 도전</li>
+      <li>친구 초대 보상 시스템</li>
+    </ul>
+  </div>
+
+  <!-- alpha.9 -->
+  <div class="update-entry">
+    <div class="update-version">v1.0.0-alpha.9</div>
+    <div class="update-date">2025년 4월 (비공개 테스트)</div>
+    <span class="update-tag tag-new">NEW</span>
+    <span class="update-tag tag-improve">개선</span>
+    <ul class="update-list">
+      <li>글로벌 챌린지 전 유저 오픈 (기존 PRO 전용 → 광고 시청 후 무료 도전)</li>
+      <li>코인 내역 화면 추가 — 획득·사용 기록 60건 조회</li>
+      <li>선물함 도입 — 모든 보상(코인·배지)을 선물함으로 수령</li>
+      <li>프로필 미리보기 전 유저 공개</li>
+      <li>주간 보상 1위 30코인 · 2위 20코인 · 3위 10코인으로 조정</li>
+      <li>누적 정답률 랭킹 — 학습 단어 100개 이상 기준 적용</li>
+      <li>앱 번들 최적화 (admin/ranking 청크 분리)</li>
+    </ul>
+  </div>
+
+  <!-- alpha.8 -->
+  <div class="update-entry">
+    <div class="update-version">v1.0.0-alpha.8</div>
+    <div class="update-date">2025년 3월 (비공개 테스트)</div>
+    <span class="update-tag tag-new">NEW</span>
+    <span class="update-tag tag-fix">수정</span>
+    <ul class="update-list">
+      <li>PRO 구독 기능 추가 (광고 제거)</li>
+      <li>다크 모드 지원</li>
+      <li>랭킹전 단어 400개 추가</li>
+      <li>코인 상점 아이템 확대</li>
+      <li>안드로이드 성능 개선</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 젤리 영단어 · <a href="privacy.html">개인정보처리방침</a> · <a href="manual.html">사용 방법</a></p>
+</footer>
+
+</body>
+</html>
