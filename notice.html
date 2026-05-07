@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공지사항 — 젤리 영단어</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 앱 인앱 iframe 모달용 — 헤더/푸터 숨김 처리 */
+    body.inapp header, body.inapp footer, body.inapp .breadcrumb { display: none !important; }
+    body.inapp main { padding-top: 0; }
+    body.inapp .page-header { padding: 16px 16px 8px; }
+
+    .notice-list { list-style: none; padding: 0; margin: 0; }
+    .notice-item {
+      border-bottom: 1px solid var(--border, #e5e7eb);
+      padding: 18px 0;
+    }
+    .notice-item:last-child { border-bottom: none; }
+    .notice-meta {
+      display: flex; gap: 8px; align-items: center;
+      font-size: 0.78rem; color: #6b7280; margin-bottom: 6px;
+    }
+    .notice-badge {
+      background: #fef3c7; color: #92400e;
+      padding: 1px 7px; border-radius: 20px;
+      font-size: 0.73rem; font-weight: 600;
+    }
+    .notice-badge.info { background: #dbeafe; color: #1e40af; }
+    .notice-badge.update { background: #d1fae5; color: #065f46; }
+    .notice-title {
+      font-weight: 700; font-size: 0.97rem;
+      color: #111827; margin-bottom: 6px;
+    }
+    .notice-body {
+      font-size: 0.85rem; color: #374151;
+      line-height: 1.65; white-space: pre-line;
+    }
+    .notice-empty {
+      text-align: center; color: #9ca3af;
+      padding: 48px 0; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><img src="images/logo.png" alt="젤리 영단어" class="logo-img"></a>
+  <nav>
+    <a href="updates.html">업데이트</a>
+    <a href="tips.html">학습 팁</a>
+    <a href="help.html">도움말</a>
+    <a href="manual.html">사용 방법</a>
+    <a href="pro.html">PRO</a>
+    <a href="privacy.html">개인정보</a>
+    <a href="terms.html">약관</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">홈</a> &rsaquo; 공지사항</div>
+    <h1>📢 공지사항</h1>
+    <div class="updated">젤리 영단어 공식 공지</div>
+  </div>
+
+  <div class="section">
+    <ul class="notice-list">
+
+      <li class="notice-item">
+        <div class="notice-meta">
+          <span class="notice-badge update">업데이트</span>
+          <span>2025.05.07</span>
+        </div>
+        <div class="notice-title">비공개 테스트 alpha.11 업데이트 안내</div>
+        <div class="notice-body">안녕하세요, 젤리 영단어입니다 🎉
+
+이번 업데이트에서 아래 내용이 추가되었습니다.
+
+• 칭호 시스템 추가 — 프로필에 칭호를 장착해 개성을 표현하세요
+• 첫 학습 퀘스트 완료 시 'Beginner' 칭호 자동 지급
+• 코인 상점 아이템 대폭 추가 (아바타, 카드 스킨, 프레임)
+• PRO 코인 보너스 +50%로 통일
+• 안정성 및 기타 개선
+
+테스트 중 불편한 점이 있으면 편하게 알려주세요. 감사합니다!</div>
+      </li>
+
+    </ul>
+  </div>
+</main>
+
+<script>
+  // ?inapp=1 파라미터가 있으면 헤더/푸터 숨김 (앱 인앱 iframe 모드)
+  if (new URLSearchParams(location.search).get("inapp") === "1") {
+    document.body.classList.add("inapp");
+  }
+</script>
+</body>
+</html>
