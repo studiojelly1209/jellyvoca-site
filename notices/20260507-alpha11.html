@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>alpha.11 업데이트 안내 — 젤리 영단어</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body.inapp header, body.inapp footer, body.inapp .breadcrumb { display: none !important; }
+    body.inapp main { padding-top: 0; }
+    body.inapp .page-header { padding: 16px 16px 8px; }
+    body.inapp .notice-back { display: flex; }
+
+    .notice-back {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 16px 0;
+      color: #6b7280;
+      font-size: 0.85rem;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .notice-back:hover { color: #111; }
+
+    .notice-detail { padding: 0 0 32px; }
+    .notice-detail .meta {
+      display: flex; gap: 8px; align-items: center;
+      font-size: 0.78rem; color: #6b7280; margin-bottom: 12px;
+    }
+    .notice-badge {
+      background: #d1fae5; color: #065f46;
+      padding: 2px 9px; border-radius: 20px;
+      font-size: 0.73rem; font-weight: 600;
+    }
+    .notice-detail h2 {
+      font-size: 1.15rem; font-weight: 700;
+      color: #111827; margin-bottom: 18px; line-height: 1.4;
+    }
+    .notice-detail .body {
+      font-size: 0.88rem; color: #374151;
+      line-height: 1.8;
+    }
+    .notice-detail .body ul {
+      padding-left: 18px; margin: 8px 0;
+    }
+    .notice-detail .body ul li { margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../index.html"><img src="../images/logo.png" alt="젤리 영단어" class="logo-img"></a>
+  <nav>
+    <a href="../notice.html">공지사항</a>
+    <a href="../updates.html">업데이트</a>
+    <a href="../tips.html">학습 팁</a>
+    <a href="../help.html">도움말</a>
+    <a href="../manual.html">사용 방법</a>
+    <a href="../pro.html">PRO</a>
+    <a href="../privacy.html">개인정보</a>
+    <a href="../terms.html">약관</a>
+  </nav>
+</header>
+
+<main>
+  <a class="notice-back" href="../notice.html?inapp=1">← 공지 목록</a>
+
+  <div class="page-header" style="padding-bottom: 8px;">
+    <div class="breadcrumb"><a href="../index.html">홈</a> &rsaquo; <a href="../notice.html">공지사항</a> &rsaquo; alpha.11</div>
+    <h1>📢 공지사항</h1>
+  </div>
+
+  <div class="section notice-detail">
+    <div class="meta">
+      <span class="notice-badge">업데이트</span>
+      <span>2026.05.07</span>
+    </div>
+    <h2>alpha.11 업데이트 안내</h2>
+    <div class="body">
+      <p>안녕하세요, 젤리 영단어입니다 🎉</p>
+      <br>
+      <p>이번 업데이트에서 아래 내용이 추가되었습니다.</p>
+      <ul>
+        <li><strong>칭호 시스템 추가</strong> — 프로필에 칭호를 장착해 개성을 표현하세요</li>
+        <li>첫 학습 퀘스트 완료 시 'Beginner' 칭호 자동 지급</li>
+        <li><strong>코인 상점 아이템 대폭 추가</strong> — 아바타, 카드 스킨, 프레임</li>
+        <li>PRO 코인 보너스 +50%로 통일</li>
+        <li>안정성 및 기타 개선</li>
+      </ul>
+      <br>
+      <p>테스트 중 불편한 점이 있으면 편하게 알려주세요. 감사합니다! 😊</p>
+    </div>
+  </div>
+</main>
+
+<script>
+  if (new URLSearchParams(location.search).get("inapp") === "1") {
+    document.body.classList.add("inapp");
+    document.querySelectorAll('a[href*="notice.html"]').forEach(a => {
+      const u = new URL(a.href, location.href);
+      u.searchParams.set("inapp", "1");
+      a.href = u.toString();
+    });
+  }
+</script>
+</body>
+</html>

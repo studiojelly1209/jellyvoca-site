@@ -6,7 +6,6 @@
   <title>공지사항 — 젤리 영단어</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* 앱 인앱 iframe 모달용 — 헤더/푸터 숨김 처리 */
     body.inapp header, body.inapp footer, body.inapp .breadcrumb { display: none !important; }
     body.inapp main { padding-top: 0; }
     body.inapp .page-header { padding: 16px 16px 8px; }
@@ -14,28 +13,46 @@
     .notice-list { list-style: none; padding: 0; margin: 0; }
     .notice-item {
       border-bottom: 1px solid var(--border, #e5e7eb);
-      padding: 18px 0;
     }
     .notice-item:last-child { border-bottom: none; }
+
+    .notice-link {
+      display: block;
+      padding: 16px 4px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+      border-radius: 8px;
+    }
+    .notice-link:hover { background: #fafaf5; }
+    .notice-link:active { background: #f3f0e0; }
+
     .notice-meta {
       display: flex; gap: 8px; align-items: center;
       font-size: 0.78rem; color: #6b7280; margin-bottom: 6px;
     }
     .notice-badge {
-      background: #fef3c7; color: #92400e;
       padding: 1px 7px; border-radius: 20px;
       font-size: 0.73rem; font-weight: 600;
+      background: #fef3c7; color: #92400e;
     }
-    .notice-badge.info { background: #dbeafe; color: #1e40af; }
+    .notice-badge.info   { background: #dbeafe; color: #1e40af; }
     .notice-badge.update { background: #d1fae5; color: #065f46; }
+
     .notice-title {
       font-weight: 700; font-size: 0.97rem;
-      color: #111827; margin-bottom: 6px;
+      color: #111827; margin-bottom: 4px;
     }
-    .notice-body {
-      font-size: 0.85rem; color: #374151;
-      line-height: 1.65; white-space: pre-line;
+    .notice-preview {
+      font-size: 0.82rem; color: #6b7280;
+      white-space: nowrap; overflow: hidden;
+      text-overflow: ellipsis; max-width: 100%;
     }
+    .notice-arrow {
+      float: right; color: #d1d5db;
+      font-size: 1rem; margin-top: -1.6rem;
+    }
+
     .notice-empty {
       text-align: center; color: #9ca3af;
       padding: 48px 0; font-size: 0.9rem;
@@ -66,38 +83,42 @@
   </div>
 
   <div class="section">
-    <ul class="notice-list">
+    <ul class="notice-list" id="noticeList">
 
       <li class="notice-item">
-        <div class="notice-meta">
-          <span class="notice-badge update">업데이트</span>
-          <span>2026.05.08</span>
-        </div>
-        <div class="notice-title">alpha.12 업데이트 안내</div>
-        <div class="notice-body">• PRO 이용 방식이 월간 / 연간 구독형으로 정리되었습니다
-• 연간 구독 35,880원 (월간 대비 약 40% 할인)
-• 멤버십 안내 화면 개선
-• 강제 업데이트 및 정책 안내 문구 정리
-• 다크모드 / 광고 로딩 관련 UX 개선</div>
+        <a class="notice-link" href="notices/20260510-alpha13.html">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            <span>2026.05.10</span>
+          </div>
+          <div class="notice-title">alpha.13 업데이트 안내</div>
+          <div class="notice-preview">결제 안정성 개선, 즐겨찾기 학습 PRO 전용, 통계 오답률, PRO 아이템 잠금 처리</div>
+          <span class="notice-arrow">›</span>
+        </a>
       </li>
 
       <li class="notice-item">
-        <div class="notice-meta">
-          <span class="notice-badge update">업데이트</span>
-          <span>2025.05.07</span>
-        </div>
-        <div class="notice-title">비공개 테스트 alpha.11 업데이트 안내</div>
-        <div class="notice-body">안녕하세요, 젤리 영단어입니다 🎉
+        <a class="notice-link" href="notices/20260508-alpha12.html">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            <span>2026.05.08</span>
+          </div>
+          <div class="notice-title">alpha.12 업데이트 안내</div>
+          <div class="notice-preview">PRO 월간/연간 구독형 전환, 멤버십 화면 개선, 다크모드 UX 개선</div>
+          <span class="notice-arrow">›</span>
+        </a>
+      </li>
 
-이번 업데이트에서 아래 내용이 추가되었습니다.
-
-• 칭호 시스템 추가 — 프로필에 칭호를 장착해 개성을 표현하세요
-• 첫 학습 퀘스트 완료 시 'Beginner' 칭호 자동 지급
-• 코인 상점 아이템 대폭 추가 (아바타, 카드 스킨, 프레임)
-• PRO 코인 보너스 +50%로 통일
-• 안정성 및 기타 개선
-
-테스트 중 불편한 점이 있으면 편하게 알려주세요. 감사합니다!</div>
+      <li class="notice-item">
+        <a class="notice-link" href="notices/20260507-alpha11.html">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            <span>2026.05.07</span>
+          </div>
+          <div class="notice-title">alpha.11 업데이트 안내</div>
+          <div class="notice-preview">칭호 시스템, 코인 상점 아이템 추가, PRO 코인 보너스 개선</div>
+          <span class="notice-arrow">›</span>
+        </a>
       </li>
 
     </ul>
@@ -105,9 +126,15 @@
 </main>
 
 <script>
-  // ?inapp=1 파라미터가 있으면 헤더/푸터 숨김 (앱 인앱 iframe 모드)
-  if (new URLSearchParams(location.search).get("inapp") === "1") {
+  const isInapp = new URLSearchParams(location.search).get("inapp") === "1";
+  if (isInapp) {
     document.body.classList.add("inapp");
+    // inapp 모드에서 각 링크에 inapp=1 파라미터 자동 추가
+    document.querySelectorAll(".notice-link").forEach(a => {
+      const u = new URL(a.href, location.href);
+      u.searchParams.set("inapp", "1");
+      a.href = u.toString();
+    });
   }
 </script>
 </body>
