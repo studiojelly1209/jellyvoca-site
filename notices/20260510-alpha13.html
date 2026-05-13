@@ -3,147 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="젤리 영단어 alpha.13 업데이트 — 결제 안정성 개선, 즐겨찾기 학습 PRO 전용, 통계 오답률, PRO 아이템 잠금 처리." />
   <title>alpha.13 업데이트 안내 — 젤리 영단어</title>
-    <meta property="og:type" content="article" />
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="alpha.13 업데이트 안내 — 젤리 영단어" />
-  <meta property="og:description" content="젤리 영단어 alpha.13 업데이트 내용을 확인하세요. 선물함 개선, 퀘스트 칭호, 공지 시스템 등 다양한 기능이 추가되었습니다." />
+  <meta property="og:description" content="결제 안정성 개선, 즐겨찾기 학습 PRO 전용, 통계 오답률, PRO 아이템 잠금 처리." />
   <meta property="og:url" content="https://jellyvoca.studiojelly.co.kr/notices/20260510-alpha13.html" />
   <meta property="og:image" content="https://jellyvoca.studiojelly.co.kr/images/logo.png" />
   <meta property="og:locale" content="ko_KR" />
   <link rel="canonical" href="https://jellyvoca.studiojelly.co.kr/notices/20260510-alpha13.html" />
   <link rel="stylesheet" href="../style.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687482029109510" crossorigin="anonymous"></script>
   <style>
     body.inapp header, body.inapp footer, body.inapp .breadcrumb { display: none !important; }
     body.inapp main { padding-top: 0; }
     body.inapp .page-header { padding: 16px 16px 8px; }
     body.inapp .notice-back { display: flex; }
-
     .notice-back {
-      display: none;
-      align-items: center;
-      gap: 6px;
-      padding: 12px 16px 0;
-      color: #6b7280;
-      font-size: 0.85rem;
-      text-decoration: none;
-      cursor: pointer;
+      display: none; align-items: center; gap: 6px;
+      padding: 12px 16px 0; color: #6b7280; font-size: 0.85rem;
+      cursor: pointer; background: none; border: none; font-family: inherit;
     }
-    .notice-back:hover { color: #111; }
-
-    .notice-detail { padding: 0 0 32px; }
-    .notice-detail .meta {
-      display: flex; gap: 8px; align-items: center;
-      font-size: 0.78rem; color: #6b7280; margin-bottom: 12px;
-    }
-    .notice-badge {
-      background: #d1fae5; color: #065f46;
-      padding: 2px 9px; border-radius: 20px;
-      font-size: 0.73rem; font-weight: 600;
-    }
-    .notice-detail h2 {
-      font-size: 1.15rem; font-weight: 700;
-      color: #111827; margin-bottom: 18px;
-      line-height: 1.4;
-    }
-    .notice-detail .body {
-      font-size: 0.88rem; color: #374151;
-      line-height: 1.8; white-space: pre-line;
-    }
-    .notice-detail .body .section-title {
-      font-weight: 700; color: #111827;
-      margin-top: 20px; margin-bottom: 6px;
-      font-size: 0.9rem;
-    }
-    .notice-detail .body ul {
-      padding-left: 18px; margin: 0;
-    }
-    .notice-detail .body ul li {
-      margin-bottom: 5px;
-    }
-    .lang-divider {
-      border: none; border-top: 1px dashed #e5e7eb;
-      margin: 28px 0;
-    }
+    .notice-back:hover { color: #4f46e5; }
+    .notice-body { max-width: 720px; margin: 0 auto; padding: 0 16px 48px; }
+    .notice-meta { color: #6b7280; font-size: 0.85rem; margin-bottom: 24px; }
+    .notice-section { margin-bottom: 28px; }
+    .notice-section h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; color: #4f46e5; display: flex; align-items: center; gap: 6px; }
+    .notice-section ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .notice-section li { padding: 8px 12px; background: var(--surface, #f9fafb); border-radius: 8px; font-size: 0.92rem; line-height: 1.5; border-left: 3px solid #e0e7ff; }
+    .lang-divider { border: none; border-top: 2px dashed var(--border, #e5e7eb); margin: 36px 0; }
+    .lang-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; color: #9ca3af; text-transform: uppercase; margin-bottom: 16px; }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687482029109510"
-       crossorigin="anonymous"></script>
 </head>
 <body>
-
 <header>
   <a class="logo" href="../index.html"><img src="../images/logo.png" alt="젤리 영단어" class="logo-img"></a>
   <nav>
     <a href="../notice.html">공지사항</a>
-    <a href="../updates.html">업데이트</a>
     <a href="../tips.html">학습 팁</a>
     <a href="../help.html">도움말</a>
-    <a href="../manual.html">사용 방법</a>
-    <a href="../pro.html">PRO</a>
-    <a href="../privacy.html">개인정보</a>
-    <a href="../terms.html">약관</a>
+    <a href="../pro.html" class="nav-pro">✨ PRO</a>
   </nav>
 </header>
 
-<main>
-  <a class="notice-back" href="../notice.html?inapp=1">← 공지 목록</a>
+<button class="notice-back" onclick="window.location.href='../notice.html'">← 공지 목록</button>
 
-  <div class="page-header" style="padding-bottom: 8px;">
-    <div class="breadcrumb"><a href="../index.html">홈</a> &rsaquo; <a href="../notice.html">공지사항</a> &rsaquo; alpha.13</div>
-    <h1>📢 공지사항</h1>
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">홈</a> › <a href="../notice.html">공지사항</a> › alpha.13</div>
+    <h1 class="page-title">🆕 alpha.13 업데이트 안내</h1>
   </div>
 
-  <div class="section notice-detail">
-    <div class="meta">
-      <span class="notice-badge">업데이트</span>
-      <span>2026.05.10</span>
+  <div class="notice-body">
+    <p class="notice-meta">2026년 5월 10일 · v1.0.0-alpha.13</p>
+
+    <p class="lang-label">🇰🇷 한국어</p>
+
+    <div class="notice-section">
+      <h3>💳 결제 안정성 개선</h3>
+      <ul>
+        <li>PRO 구독 결제 후 즉시 반영되지 않던 문제가 수정되었습니다.</li>
+        <li>서버에서 직접 구독 상태를 검증하는 방식으로 변경되어 더욱 안정적으로 동작합니다.</li>
+      </ul>
     </div>
-    <h2>alpha.13 업데이트 안내</h2>
 
-    <div class="body">
-<p class="section-title">🇰🇷 한국어</p>
-안녕하세요, 젤리 영단어입니다 🍬
+    <div class="notice-section">
+      <h3>⭐ 즐겨찾기 학습 PRO 전용</h3>
+      <ul>
+        <li>즐겨찾기 학습 기능이 PRO 전용으로 변경되었습니다 (1일 1회 제한).</li>
+      </ul>
+    </div>
 
-이번 alpha.13 업데이트의 주요 변경 내용을 안내드립니다.
+    <div class="notice-section">
+      <h3>📊 통계 오답률 표시</h3>
+      <ul>
+        <li>통계 화면에서 오답률(%)을 확인할 수 있습니다.</li>
+        <li>어떤 단어를 자주 틀리는지 더 명확하게 파악하세요.</li>
+      </ul>
+    </div>
 
-<ul>
-<li><strong>결제 안정성 개선</strong> — PRO 구독 결제 후 즉시 반영되지 않던 문제가 수정되었습니다. 서버에서 직접 구독 상태를 검증하는 방식으로 개선되어 더욱 안정적으로 동작합니다.</li>
-<li><strong>즐겨찾기 학습 PRO 전용</strong> — 즐겨찾기 학습 기능이 PRO 전용으로 변경되었습니다. (1일 1회 제한)</li>
-<li><strong>통계 오답률 표시</strong> — 통계 화면에서 오답률(%)을 확인할 수 있습니다. 어떤 단어를 자주 틀리는지 더 명확하게 파악하세요.</li>
-<li><strong>PRO 아이템 잠금 처리</strong> — PRO 구독이 만료되면 PRO 전용 아이템(배지·테두리·스킨 등)이 자동으로 잠금 처리됩니다. 소유권은 유지되며 재구독 시 바로 복구됩니다.</li>
-<li>그 외 안정성 및 보안 개선</li>
-</ul>
+    <div class="notice-section">
+      <h3>🔒 PRO 아이템 만료 시 자동 잠금</h3>
+      <ul>
+        <li>PRO 구독이 만료되면 PRO 전용 아이템(배지·테두리·스킨 등)이 자동으로 잠금 처리됩니다.</li>
+        <li>소유권은 유지되며 재구독 시 바로 복구됩니다.</li>
+      </ul>
+    </div>
 
-항상 응원해 주셔서 감사합니다! 불편한 점은 언제든지 알려주세요. 😊
+    <div class="notice-section">
+      <h3>🔧 기타 개선</h3>
+      <ul>
+        <li>안정성 및 보안이 개선되었습니다.</li>
+      </ul>
+    </div>
 
     <hr class="lang-divider" />
+    <p class="lang-label">🇺🇸 English</p>
 
-<p class="section-title">🇺🇸 English</p>
-Hello, this is Jelly Voca 🍬
+    <div class="notice-section">
+      <h3>💳 Payment Stability Fix</h3>
+      <ul>
+        <li>Fixed an issue where PRO subscription status wasn't applied immediately after purchase.</li>
+        <li>Subscription state is now verified directly from the server for greater reliability.</li>
+      </ul>
+    </div>
 
-Here are the key changes in the alpha.13 update.
+    <div class="notice-section">
+      <h3>⭐ Bookmark Study is PRO-Exclusive</h3>
+      <ul>
+        <li>Bookmark Study mode is now available for PRO subscribers only (once per day).</li>
+      </ul>
+    </div>
 
-<ul>
-<li><strong>Payment Stability Fix</strong> — Fixed an issue where PRO subscription status wasn't applied immediately after purchase. Subscription state is now verified directly from the server for greater reliability.</li>
-<li><strong>Bookmark Study is PRO-exclusive</strong> — Bookmark Study mode is now available for PRO subscribers only. (Once per day)</li>
-<li><strong>Wrong Answer Rate in Stats</strong> — You can now see your wrong answer rate (%) in the Stats screen to better track which words you struggle with.</li>
-<li><strong>PRO Item Lock on Expiry</strong> — PRO-exclusive items (badges, frames, card skins, etc.) are automatically locked when your PRO subscription expires. Ownership is retained and items are restored immediately upon re-subscribing.</li>
-<li>Other stability and security improvements</li>
-</ul>
+    <div class="notice-section">
+      <h3>📊 Wrong Answer Rate in Stats</h3>
+      <ul>
+        <li>You can now see your wrong answer rate (%) in the Stats screen.</li>
+        <li>Better track which words you struggle with most.</li>
+      </ul>
+    </div>
 
-Thank you for your continued support! Feel free to reach out if you experience any issues. 😊
+    <div class="notice-section">
+      <h3>🔒 PRO Item Lock on Expiry</h3>
+      <ul>
+        <li>PRO-exclusive items (badges, frames, card skins, etc.) are automatically locked when your PRO subscription expires.</li>
+        <li>Ownership is retained and items are restored immediately upon re-subscribing.</li>
+      </ul>
+    </div>
+
+    <div class="notice-section">
+      <h3>🔧 Other Improvements</h3>
+      <ul>
+        <li>Stability and security improvements.</li>
+      </ul>
     </div>
   </div>
 </main>
 
+<footer>
+  <p>© 2026 Studio Jelly. All rights reserved.</p>
+  <nav>
+    <a href="../privacy.html">개인정보처리방침</a>
+    <a href="../terms.html">이용약관</a>
+    <a href="../help.html">도움말</a>
+  </nav>
+</footer>
 <script>
-  if (new URLSearchParams(location.search).get("inapp") === "1") {
-    document.body.classList.add("inapp");
-    // inapp 모드에서 목록 링크에도 inapp=1 유지
-    document.querySelectorAll('a[href*="notice.html"]').forEach(a => {
-      const u = new URL(a.href, location.href);
-      u.searchParams.set("inapp", "1");
-      a.href = u.toString();
-    });
+  if (new URLSearchParams(location.search).get('inapp') === '1') {
+    document.body.classList.add('inapp');
   }
 </script>
 </body>
