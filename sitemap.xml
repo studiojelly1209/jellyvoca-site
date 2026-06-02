@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/pro.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/manual.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/tips.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/notice.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/help.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -80,13 +80,19 @@
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/privacy.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/terms.html</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://jellyvoca.studiojelly.co.kr/delete-account.html</loc>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
