@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="젤리 영단어 beta.3 업데이트 — 로그인 유지 안정성, 개인화 복습 알림, 앱 경량화와 정식 출시 전 안정성 개선." />
+  <title>beta.3 업데이트 안내 — 젤리 영단어</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="beta.3 업데이트 안내 — 젤리 영단어" />
+  <meta property="og:description" content="로그인 유지 안정성, 개인화 복습 알림, 앱 경량화와 정식 출시 전 안정성 개선을 반영했습니다." />
+  <meta property="og:url" content="https://jellyvoca.studiojelly.co.kr/notices/20260613-beta3.html" />
+  <meta property="og:image" content="https://jellyvoca.studiojelly.co.kr/images/logo.png" />
+  <meta property="og:locale" content="ko_KR" />
+  <link rel="canonical" href="https://jellyvoca.studiojelly.co.kr/notices/20260613-beta3.html" />
+  <link rel="stylesheet" href="../style.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9687482029109510"
+       crossorigin="anonymous"></script>
+  <style>
+    body.inapp header, body.inapp footer, body.inapp .breadcrumb { display: none !important; }
+    body.inapp main { padding-top: 0; }
+    body.inapp .page-header { padding: 16px 16px 8px; }
+    body.inapp .notice-back { display: flex; }
+
+    .notice-back {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 16px 0;
+      color: #6b7280;
+      font-size: 0.85rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+    }
+    .notice-back:hover { color: #4f46e5; }
+
+    .notice-body { max-width: 720px; margin: 0 auto; padding: 0 16px 48px; }
+    .notice-meta { color: #6b7280; font-size: 0.85rem; margin-bottom: 24px; }
+    .notice-section { margin-bottom: 28px; }
+    .notice-section h3 {
+      font-size: 1rem; font-weight: 700; margin-bottom: 10px;
+      color: #4f46e5; display: flex; align-items: center; gap: 6px;
+    }
+    .notice-section ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .notice-section li {
+      padding: 8px 12px; background: var(--surface, #f9fafb);
+      border-radius: 8px; font-size: 0.92rem; line-height: 1.5;
+      border-left: 3px solid #e0e7ff;
+    }
+    .lang-divider {
+      border: none; border-top: 2px dashed var(--border, #e5e7eb);
+      margin: 36px 0;
+    }
+    .lang-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+      color: #9ca3af; text-transform: uppercase; margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <a class="logo" href="../index.html"><img src="../images/logo.png" alt="젤리 영단어" class="logo-img"></a>
+  <nav>
+    <a href="../notice.html">공지사항</a>
+    <a href="../tips.html">학습 팁</a>
+    <a href="../help.html">도움말</a>
+    <a href="../pro.html" class="nav-pro">PRO</a>
+  </nav>
+</header>
+
+<button class="notice-back" onclick="window.location.href='../notice.html'">← 공지 목록</button>
+
+<main>
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">홈</a> › <a href="../notice.html">공지사항</a> › beta.3</div>
+    <h1 class="page-title">beta.3 업데이트 안내</h1>
+  </div>
+
+  <div class="notice-body">
+    <p class="notice-meta">2026년 6월 13일 · v1.0.0-beta.3</p>
+
+    <p class="lang-label">한국어</p>
+
+    <div class="notice-section">
+      <h3>로그인 유지 안정성 개선</h3>
+      <ul>
+        <li>앱을 다시 실행하거나 백그라운드에서 돌아왔을 때 로그인 상태가 더 안정적으로 복원되도록 개선했습니다.</li>
+        <li>기존 계정과 학습 데이터 흐름은 그대로 유지하면서, 불필요하게 로그인 화면으로 돌아가는 상황을 줄였습니다.</li>
+      </ul>
+    </div>
+
+    <div class="notice-section">
+      <h3>개인화 복습 알림</h3>
+      <ul>
+        <li>복습 알림 문구가 더 구체적으로 바뀌었습니다.</li>
+        <li>오답 기록이 있는 단어가 있으면 헷갈린 단어를 먼저 알려주고, 마스터 전 단어가 있으면 다시 확인할 수 있도록 안내합니다.</li>
+      </ul>
+    </div>
+
+    <div class="notice-section">
+      <h3>앱 경량화와 안정화</h3>
+      <ul>
+        <li>앱에 포함되는 미사용 이미지 자산을 정리해 설치 파일과 웹 자산 크기를 줄였습니다.</li>
+        <li>Remote Config 호출 간격을 정식 빌드에 맞게 조정해 앱 시작 시 불필요한 네트워크 요청을 줄였습니다.</li>
+        <li>정식 출시 전 안정성을 높이기 위한 내부 점검과 빌드 메타데이터 정리를 함께 반영했습니다.</li>
+      </ul>
+    </div>
+
+    <hr class="lang-divider" />
+
+    <p class="lang-label">English</p>
+
+    <div class="notice-section">
+      <h3>Improved Login Persistence</h3>
+      <ul>
+        <li>Login sessions are now restored more reliably after restarting the app or returning from the background.</li>
+        <li>The existing account and learning data flow remains unchanged, while unexpected returns to the login screen should happen less often.</li>
+      </ul>
+    </div>
+
+    <div class="notice-section">
+      <h3>Personalized Review Notifications</h3>
+      <ul>
+        <li>Review notifications now provide more specific messages.</li>
+        <li>If you have words with wrong-answer history, the notification highlights them first. If there are words not yet mastered, it guides you back to review.</li>
+      </ul>
+    </div>
+
+    <div class="notice-section">
+      <h3>Lighter App Assets and Stability Updates</h3>
+      <ul>
+        <li>Unused image assets were removed from the app bundle to reduce packaged web assets.</li>
+        <li>Remote Config fetch timing was adjusted for production builds to reduce unnecessary startup network requests.</li>
+        <li>Additional internal checks and build metadata updates were applied ahead of the official release.</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Studio Jelly. All rights reserved.</p>
+  <nav>
+    <a href="../privacy.html">개인정보처리방침</a>
+    <a href="../terms.html">이용약관</a>
+    <a href="../help.html">도움말</a>
+  </nav>
+</footer>
+<script>
+  if (new URLSearchParams(location.search).get('inapp') === '1') {
+    document.body.classList.add('inapp');
+  }
+</script>
+</body>
+</html>
