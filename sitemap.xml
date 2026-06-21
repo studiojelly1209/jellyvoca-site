@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://jellyvoca.studiojelly.co.kr/notice.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -34,6 +34,12 @@
     <loc>https://jellyvoca.studiojelly.co.kr/help.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jellyvoca.studiojelly.co.kr/notices/20260622-v100-official.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
