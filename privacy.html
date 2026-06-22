@@ -35,7 +35,7 @@
   <div class="page-header">
     <div class="breadcrumb"><a href="index.html">홈</a> &rsaquo; 개인정보처리방침</div>
     <h1>개인정보처리방침</h1>
-    <div class="updated">최종 수정일: 2026년 6월 2일 · 시행일: 2026년 6월 2일</div>
+    <div class="updated">최종 수정일: 2026년 6월 22일 · 시행일: 2026년 6월 22일</div>
   </div>
 
   <div class="section">
@@ -45,7 +45,8 @@
       <li>비밀번호 또는 인증 정보(원문 복구가 불가능한 방식 또는 인증 서비스 기준으로 처리)</li>
       <li>닉네임, 학습 진도, 정답 기록, 스트릭, 랭킹/선물함/친구 초대 정보</li>
       <li>즐겨찾기, 오답 기록, 나만의 단어, 코인 잔액 및 코인 사용 내역</li>
-      <li>알림 예약 정보</li>
+      <li>알림 예약 정보 및 앱 설정 정보</li>
+      <li>기기 식별자, 브라우저/앱 user agent, 플랫폼, 로그인 시각 등 계정 보안 및 중복 이용 확인에 필요한 접속 정보</li>
       <li>광고 식별자 및 결제 상태 정보 (해당 기능 사용 시)</li>
     </ul>
   </div>
@@ -58,27 +59,51 @@
       <li>복습 알림 발송</li>
       <li>FREE 플랜 광고 제공</li>
       <li>PRO 구독 검증, 복원, 고객 문의 대응</li>
+      <li>비정상적인 다중 기기 동시 로그인, 계정 공유, 과도한 요청 등 서비스 오남용 방지</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>3. 개인정보의 보유 및 이용 기간</h2>
     <ul>
-      <li>회원 탈퇴 또는 계정 삭제 시 즉시 삭제를 원칙으로 합니다.</li>
-      <li>단, 관련 법령에서 일정 기간 보관을 요구하는 경우 해당 기간 동안 보관할 수 있습니다.</li>
       <li>학습 데이터는 서비스 이용 기간 동안 클라우드 인프라에 저장됩니다.</li>
+      <li>회원 탈퇴 또는 계정 삭제 시 앱에서 관리하는 계정, 학습, 랭킹, 선물함, 초대, 로그인 이력 데이터는 삭제됩니다.</li>
+      <li>Google Play, RevenueCat, Google AdMob 등 외부 서비스가 법령 준수, 정산, 부정 이용 방지, 보안 로그 보관을 위해 보유하는 정보는 각 제공자의 정책과 법적 보관 기간에 따라 별도로 보관될 수 있습니다.</li>
+      <li>고객 문의 이메일과 처리 기록은 문의 대응 및 분쟁 방지를 위해 필요한 기간 동안 보관될 수 있습니다.</li>
+      <li>관련 법령에서 일정 기간 보관을 요구하는 경우 해당 기간 동안 보관할 수 있습니다.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>4. 개인정보의 처리 위탁 / 외부 서비스</h2>
-    <p>앱은 서비스 운영에 필요한 범위에서 외부 인증, 데이터 저장, 광고, 결제 서비스를 사용할 수 있습니다.</p>
-    <ul>
-      <li><strong>클라우드 인증/데이터 저장 서비스</strong>: 회원 인증, 학습 데이터 저장, 선물함·랭킹·친구 초대 기능 운영</li>
-      <li><strong>광고 서비스</strong>: FREE 플랜 광고 제공, 광고 식별자 및 노출 진단 정보 처리 가능</li>
-      <li><strong>결제/구독 검증 서비스</strong>: PRO 구매 상태 확인, 복원, 구독 상태 동기화</li>
-      <li><strong>앱 마켓 결제 시스템</strong>: 인앱 결제 및 구독 처리</li>
-    </ul>
+    <p>앱은 서비스 운영에 필요한 범위에서 아래 외부 서비스를 사용합니다. 각 서비스는 해당 기능 제공, 보안, 장애 대응, 결제 처리에 필요한 범위에서 데이터를 처리합니다.</p>
+    <table class="compare-table">
+      <thead>
+        <tr><th>서비스</th><th>처리 항목</th><th>목적</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Authentication / Cloud Firestore (Google LLC)</td>
+          <td>계정 식별 정보, 인증 정보, 학습 기록, 닉네임, 랭킹, 선물함, 초대, 접속/기기 정보</td>
+          <td>로그인, 데이터 저장, 동기화, 계정 보안, 앱 운영</td>
+        </tr>
+        <tr>
+          <td>Google AdMob / Google AdSense</td>
+          <td>광고 식별자, 광고 노출 및 진단 정보, 쿠키 또는 유사 기술(웹 광고 표시 시)</td>
+          <td>FREE 플랜 광고 제공, 광고 품질 및 부정 이용 방지</td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>앱 사용자 식별자, 구매 영수증 메타데이터, 구독 상태, entitlement 정보</td>
+          <td>PRO 구독 검증, 복원, 구독 상태 동기화</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>구매 및 구독 거래 정보</td>
+          <td>인앱 결제, 정기 결제, 환불 및 구독 관리</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="section">
@@ -89,7 +114,7 @@
       <li>동의 철회 및 문의: 아래 이메일 연락</li>
     </ul>
     <p style="margin-top:10px;">앱 내 절차와 삭제 범위는 <a href="delete-account.html">계정 삭제 안내</a>에서 확인할 수 있습니다.</p>
-    <p style="margin-top:10px;">요청은 아래 연락처로 이메일을 보내주시면 <strong>7영업일 이내</strong>에 처리됩니다.</p>
+    <p style="margin-top:10px;">앱 접근이 어려운 경우 아래 연락처로 이메일을 보내주시면 계정 확인 후 <strong>3영업일 이내</strong>에 처리합니다.</p>
   </div>
 
   <div class="section">
@@ -115,13 +140,29 @@
     <h2>9. 계정 이용 정책 (1인 1계정)</h2>
     <ul>
       <li>계정 공유, PRO 이용권 공유·판매·양도는 금지됩니다.</li>
-      <li>비정상적인 다중 기기 동시 로그인, 과도한 요청 등은 모니터링될 수 있습니다.</li>
+      <li>비정상적인 다중 기기 동시 로그인, 과도한 요청 등은 기기 식별자, user agent, 플랫폼, 로그인 시각 등의 접속 정보를 바탕으로 모니터링될 수 있습니다.</li>
       <li>약관 위반이 확인된 계정은 사전 통보 없이 제한될 수 있습니다.</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>10. 개인정보 보호책임자 및 문의</h2>
+    <h2>10. 개인정보 처리 현황 요약 (Play Store Data Safety)</h2>
+    <table class="compare-table">
+      <thead>
+        <tr><th>데이터 유형</th><th>수집 여부</th><th>공유/처리</th><th>암호화</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>계정 정보</td><td>수집</td><td>인증/저장 서비스 처리</td><td>전송 구간 암호화</td></tr>
+        <tr><td>앱 활동 및 학습 기록</td><td>수집</td><td>데이터 저장 및 동기화 처리</td><td>전송 구간 암호화</td></tr>
+        <tr><td>기기 또는 기타 ID</td><td>수집</td><td>계정 보안, 광고, 부정 이용 방지 목적 처리</td><td>전송 구간 암호화</td></tr>
+        <tr><td>구매 및 구독 상태</td><td>PRO 결제 시 수집</td><td>Google Play Billing 및 RevenueCat 처리</td><td>전송 구간 암호화</td></tr>
+        <tr><td>위치, 연락처, 카메라, 마이크</td><td>미수집</td><td>해당 없음</td><td>해당 없음</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>11. 개인정보 보호책임자 및 문의</h2>
     <ul>
       <li>이메일: <a href="mailto:studiojelly1209@gmail.com">studiojelly1209@gmail.com</a></li>
     </ul>
@@ -133,7 +174,7 @@
   </div>
 
   <div class="section">
-    <h2>11. 방침 변경</h2>
+    <h2>12. 방침 변경</h2>
     <p>본 방침이 변경될 경우 앱 내 공지 또는 본 페이지를 통해 사전 안내합니다. 중요한 변경 시 재동의를 요청할 수 있습니다.</p>
   </div>
 </main>
